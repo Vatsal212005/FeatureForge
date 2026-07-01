@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: featureforge-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/workspace/backend
+      - ./data:/workspace/data
+      - ./artifacts:/workspace/artifacts
+    environment:
+      DATABASE_URL: sqlite:////workspace/backend/featureforge.db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: featureforge-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/workspace/frontend
+      - /workspace/frontend/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped

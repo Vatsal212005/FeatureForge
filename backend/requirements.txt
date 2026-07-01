@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+pydantic-settings
+pandas
+numpy
+scikit-learn
+xgboost
+python-multipart
+redis
+joblib
+pytest
