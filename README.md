@@ -404,30 +404,6 @@ Example:
 
 ---
 
-## Screenshots
-
-Add screenshots to the `screenshots/` folder.
-
-Recommended files:
-
-```text
-screenshots/dashboard-home.png
-screenshots/dataset-registry.png
-screenshots/feature-registry.png
-screenshots/model-registry.png
-screenshots/drift-report.png
-screenshots/swagger-prediction.png
-```
-
-Then update this section with image links:
-
-```md
-![Dashboard](screenshots/dashboard-home.png)
-![Drift Report](screenshots/drift-report.png)
-```
-
----
-
 ## Testing
 
 Run backend tests:
