@@ -412,23 +412,6 @@ Run backend tests:
 cd backend
 pytest
 ```
-
----
-
-## Resume Bullets
-
-```text
-FeatureForge | ML Feature Store & MLOps Platform | FastAPI, React, Docker, SQLite, scikit-learn
-• Built an end-to-end ML feature store with dataset registration, reusable feature definitions, offline materialization, model training, online feature serving, and drift monitoring.
-• Implemented a full ML lifecycle workflow with feature versioning, model registry, prediction APIs, Dockerized deployment, and a React dashboard for operational visibility.
-```
-
-Alternative shorter version:
-
-```text
-Built FeatureForge, a Dockerized ML feature store and MLOps platform with dataset registry, feature registry, offline/online feature serving, model training, prediction APIs, drift monitoring, and React dashboard.
-```
-
 ---
 
 ## Future Improvements
